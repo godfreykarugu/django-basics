@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+
+
+{% block title %}
+    individual - details
+{% endblock  %}
+
+{% block content %}
+
+    <h2 style="text-align: center;">Personal details Page</h2>
+        <div class="card" style="text-align: center; background:#b2aeae; width:300px; margin: auto; padding:15px">
+            <h3> {{mymember.firstname}} {{mymember.lastname}}</h3>
+            <h6>Phone Number:  {{mymember.phone}} </h6>
+            <h6>Member sinces:  {{mymember.joined_date}} </h6>
+        
+            <p>Back to <a href="/testing">Members</a></p>
+        </div>
+
+
+{% endblock %}

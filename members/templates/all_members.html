@@ -1,0 +1,30 @@
+{% extends "master.html" %}
+
+
+{% block title %}
+  Tennis Club Members
+{% endblock  %}
+     
+   
+{% block content %}
+
+ <!-- <ol>
+        {% for x in mymembers %}
+          <li>{{ x.firstname }}</li>
+        {% endfor %}
+      </ol> -->
+      <ol>
+        {% for x in mymembers %}
+          <!-- <h2>{{x.id}}</h2>
+          <p>
+              {{x.firstname   }} 
+              {{x.lastname}}
+          </p> -->
+  
+          <li> <a href="details/{{ x.id}}"> {{x.firstname}} {{x.lastname}}</a></li>
+        {% endfor %}
+  
+    </ol>
+  
+
+{% endblock %}
